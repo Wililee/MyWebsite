@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import {LinkableLabledPhoto} from '../public/components/containers/LinkableLabledPhoto'
 
 export default function Home() {
   return (
@@ -22,23 +23,9 @@ export default function Home() {
         {/* grid */}
         <div className={styles.grid}>
 
-          {/* Projects */}
-          <a href="/projects" className={styles.card}>
-            <h3> Projects </h3>
-            <p>Come check out some of my cool projects ive worked on</p>
-          </a>
-
-          {/* About me */}
-          <a href="personal" className={styles.card}>
-            <h3>About me</h3>
-            <p>Learn more about my life and interests</p>
-          </a>
-
-          {/* Resume */}
-          <a href="resume" className={styles.card}>
-            <h3>Resume</h3>
-            <p>Take a peek at my Resume</p>
-          </a>
+          <LinkableLabledPhoto link="/projects" label="Projects" description="Come check out some of my cool projects ive worked on" imageURL="/../public/images/panarama_top.jpg" imageHeight={144} imageWidth={144}/> 
+          <LinkableLabledPhoto link="/personal" label="About me" description="Learn more about my life and interests" imageURL="/../public/images/panarama_top.jpg" imageHeight={144} imageWidth={144}/> 
+          <LinkableLabledPhoto link="/resume" label="Resume" description="Take a peek at my Resume" imageURL="/../public/images/panarama_top.jpg" imageHeight={144} imageWidth={144}/> 
 
         </div>
       </main>
