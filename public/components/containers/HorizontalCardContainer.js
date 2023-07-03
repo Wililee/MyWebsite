@@ -4,11 +4,12 @@ import Col from 'react-bootstrap/Col';
 import { Children } from 'react';
 
 export const HorizontalCardContainer = ({children}) => {
+    let i = 1;
     return (
         <Container>
             <Row style={{margin:'auto'}}>
                 {children.map(child => {
-                    return <Col>{child}</Col>
+                    return <Col key={i++}>{child}</Col>
                 })}
             </Row>
       </Container>

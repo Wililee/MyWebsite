@@ -4,9 +4,11 @@ import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {LabeledCard} from '../public/components/containers/LabledCard'
 import {HorizontalCardContainer} from '../public/components/containers/HorizontalCardContainer'
+import {BasePage} from '../public/components/containers/BasePage'
 
 export default function Home() {
   return (
+    <BasePage title="William Lee">
     <div className={styles.container}>
 
       <Head>
@@ -14,28 +16,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <h2 className={styles.description}>
+        A website all about Me!
+      </h2>
 
-        <h1 className={styles.title}>
-          William Lee
-        </h1>
-
-        <p className={styles.description}>
-          A website all about Me!
-        </p>
-
-        {/* grid */}
-        <HorizontalCardContainer>
-          <LabeledCard link="/projects" title="Projects and Achievements" description="Come check out some of my cool projects." imageURL="/../../images/SobarMap.jpg"/> 
-          <LabeledCard link="/personal" title="About me" description="Learn more about my life and interests." imageURL="/../../images/panarama_top.jpg"/>
-          <LabeledCard link="/resume" title="Resume" description="Looking into hiring -> Take a peek at my Resume?" imageURL="/../../images/fib16.jpg"/>
-        </HorizontalCardContainer>
-        
-
+      {/* grid */}
+      <HorizontalCardContainer>
+        <LabeledCard link="/projects" title="Projects and Achievements" description="Come check out some of my cool projects." imageURL="/../../images/SobarMap.jpg"/> 
+        <LabeledCard link="/personal" title="About me" description="Learn more about my life and interests." imageURL="/../../images/panarama_top.jpg"/>
+        <LabeledCard link="/resume" title="Resume" description="Looking into hiring -> Take a peek at my Resume?" imageURL="/../../images/fib16.jpg"/>
+      </HorizontalCardContainer>
 
       <footer className={styles.footer}>
 
       </footer>
-
 
       <style jsx global>{`
         body {
@@ -47,5 +41,6 @@ export default function Home() {
         }
       `}</style>
     </div>
+    </BasePage>
   )
 }

@@ -6,7 +6,7 @@ import {Navigationbar} from './Navigationbar'
 export const BasePage = ({title, children}) => {
   return (
     <div >
-        <Navigationbar></Navigationbar>
+        <Navigationbar/>
         <h1 className={styles.title}>
           {title}
         </h1>

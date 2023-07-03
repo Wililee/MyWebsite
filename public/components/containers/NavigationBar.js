@@ -12,8 +12,11 @@ export const Navigationbar = ({current}) => {
             <Navbar.Collapse id="navbarScroll">
             <Nav
                 className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
                 navbarScroll
+                style={{ 
+                    maxHeight: '200px',
+                    fontSize: 'auto'
+                }}
             >
                 <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="/projects">Projects</Nav.Link>
@@ -21,7 +24,7 @@ export const Navigationbar = ({current}) => {
                 <Nav.Link href="/resume">Resume</Nav.Link>
             </Nav>
             <Form className="d-flex">
-                <Button variant="outline-success">Contact Me</Button>
+                <Button size='lg' variant="outline-success">Contact Me</Button>
             </Form>
             </Navbar.Collapse>
         </Container>
