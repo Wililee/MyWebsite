@@ -11,11 +11,11 @@ export const ProjectCard = ({title, description, imageURL, skills, gitURL, style
             border='dark'
             style={{
             styles,
-            width: '30rem', 
+            width: '25rem', 
             margin:'auto',
             }}>
+            <Card.Header>{title}</Card.Header>
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
                 <Card.Text>
                     {description}
                 </Card.Text>

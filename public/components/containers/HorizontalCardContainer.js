@@ -6,7 +6,7 @@ import { Children } from 'react';
 export const HorizontalCardContainer = ({children}) => {
     let i = 1;
     return (
-        <Container>
+        <Container style={{padding: 10}}>
             <Row style={{margin:'auto'}}>
                 {children.map(child => {
                     return <Col key={i++}>{child}</Col>
