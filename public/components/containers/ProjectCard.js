@@ -19,7 +19,7 @@ export const ProjectCard = ({title, description, imageURL, skills, gitURL, style
             }}>
             <Card.Header>
                 <Row>
-                    <Col sm={10}>
+                    <Col sm={10} className='text-2xl'>
                         {title}
                     </Col>
                     <Col>
@@ -30,7 +30,7 @@ export const ProjectCard = ({title, description, imageURL, skills, gitURL, style
                 </Row>
             </Card.Header>
             <Card.Body>
-                <Card.Text>
+                <Card.Text className='text-lg'>
                     {description}
                 </Card.Text>
             </Card.Body>
