@@ -1,12 +1,15 @@
 import styles from '../../../styles/Home.module.css';
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link'
+import 'tailwindcss/tailwind.css';
+
 
 export const LabeledCard = ({link, title, description, imageURL, styles}) => {
 
     return (
       <Link href={link} style={{textDecoration:'none'}}>
         <Card
+        className='transform h-64 w-80 transition duration-500 hover:scale-105 '
         border='dark'
         style={{
           styles,

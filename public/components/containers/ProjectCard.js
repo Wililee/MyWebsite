@@ -3,9 +3,12 @@ import Card from 'react-bootstrap/Card';
 import Link from 'next/link'
 import {SkillBox} from '../elements/SkillBox'
 import Stack from 'react-bootstrap/Stack';
+import { Col, Row } from 'react-bootstrap';
+import { LinkIcon  } from "@heroicons/react/24/outline";
 
 export const ProjectCard = ({title, description, imageURL, skills, gitURL, styles}) => {
     let i = 0;
+    const linkIcon = <LinkIcon className="h-8 w-8"/>
     return (
         <Card
             border='dark'
@@ -14,7 +17,18 @@ export const ProjectCard = ({title, description, imageURL, skills, gitURL, style
             width: '25rem', 
             margin:'auto',
             }}>
-            <Card.Header>{title}</Card.Header>
+            <Card.Header>
+                <Row>
+                    <Col sm={10}>
+                        {title}
+                    </Col>
+                    <Col>
+                        <Link href={gitURL} target="_blank">
+                            {linkIcon}
+                        </Link>
+                    </Col>
+                </Row>
+            </Card.Header>
             <Card.Body>
                 <Card.Text>
                     {description}
