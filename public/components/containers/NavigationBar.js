@@ -17,7 +17,7 @@ export const NavigationBar = ({current}) => {
                 navbarScroll
                 style={{ 
                     maxHeight: '400px',
-                    fontSize: 'auto'
+                    height: '48px',
                 }}
             >
                 <NavButton text={"Home"} relativeURL={"/"}></NavButton>
