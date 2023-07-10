@@ -25,7 +25,7 @@ export default function Home() {
         </Row>
 
         <Row className='p-20'>
-          <HorizontalCardContainer>
+          <HorizontalCardContainer className='px-20'>
             <LabeledCard link="/projects" title="Projects and Achievements" description="Come check out some of my cool projects." imageURL="/../../images/SobarMap.jpg"/> 
             <LabeledCard link="/personal" title="About me" description="Learn more about my life and interests." imageURL="/../../images/panarama_top.jpg"/>
             <LabeledCard link="/resume" title="Resume" description="Looking into hiring -> Take a peek at my Resume?" imageURL="/../../images/fib16.jpg"/>

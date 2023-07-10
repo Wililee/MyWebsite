@@ -16,7 +16,7 @@ export const ProjectCard = ({title, description, imageURL, skills, gitURL, style
             styles,
             width: '25rem', 
             margin:'auto',
-            }}>
+            }} className='pb-1'>
             <Card.Header>
                 <Row>
                     <Col sm={10} className='text-2xl'>

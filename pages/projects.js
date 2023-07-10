@@ -15,7 +15,7 @@ export default function projects() {
   return (
     <BasePage title="Projects and Achievements">
         <h1 className='mb-4 text-4xl leading-none tracking-tight text-gray-900 md:text-5xl lg:text-5xl pl-8 pt-8'>Featured Projects</h1>
-        <HorizontalCardContainer>
+        <HorizontalCardContainer className='pl-20'>
             <ProjectCard title="My Website" description="This very website!" skills={["JavaScript", "React", "CSS"]} gitURL="https://github.com/Wililee/myWebite"/>
             <ProjectCard title="SoBar" description="SoBar is a bar hopping app used to create an optimal path for hoping inbetween bars on a night out." skills={["Java", "SQL"]} gitURL="https://github.com/Wililee/SoBarApp"/>
             <ProjectCard title="Project Olympian" description="Health and fitness app with a focus on Social Media and workout sharing." skills={["TypeScript", "React Native", "SQL"]} gitURL="https://github.com/dimitritsampiras/olympian-mobile-app"/>
