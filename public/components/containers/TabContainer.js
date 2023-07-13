@@ -26,7 +26,7 @@ export const TabContainer = ({tabs}) => {
             <div className='text-lg p-4 border-x-2 border-b-2 border-x-black border-b-black'>
                 {tabs.map((tab, i) =>
                     <div key={i}>
-                        {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p>
+                        {currentTab === `${tab.id}` && <div>
                             <div>{tab.content}</div>
                         </div>}
                     </div>
