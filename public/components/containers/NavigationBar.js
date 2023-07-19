@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {NavButton} from '../elements/NavButton';
+import { ContactMeModal } from '../elements/ContactMeModal';
 import 'tailwindcss/tailwind.css';
 
 export const NavigationBar = ({current}) => {
@@ -26,7 +27,7 @@ export const NavigationBar = ({current}) => {
                 <NavButton text={"Resume"} relativeURL={"/resume"}></NavButton>
             </Nav>
             <Form className="d-flex">
-                <Button size='lg' variant="outline-success">Contact Me</Button>
+                <ContactMeModal/>
             </Form>
             </Navbar.Collapse>
         </Container>
