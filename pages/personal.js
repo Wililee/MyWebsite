@@ -35,7 +35,7 @@ export default function personal() {
         id: 3,
         tabTitle: 'Travels',
         content: <MultiItemCarosel>
-        <PhotoCaptionCard description="London" imageURL={"/../../images/london.jpg"}/>
+        <PhotoCaptionCard description="London" imageURL={"/images/london.jpg"}/>
         <PhotoCaptionCard description="Amsterdam" imageURL={"/../../images/amsterdam.jpg"}/>
         <PhotoCaptionCard description="Munich" imageURL={"/../../images/munich.jpg"}/>
         <PhotoCaptionCard description="Lauterbrunnen" imageURL={"/../../images/lauterbrunnen.jpg"}/>
