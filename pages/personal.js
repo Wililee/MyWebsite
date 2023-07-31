@@ -11,8 +11,8 @@ export default function personal() {
         id: 1,
         tabTitle: 'Hobbies',
         content: <MultiItemCarosel>
-        <HobbieCard title="Climbing" description="Over the past few years i've gotten into bouldering and top rope climbing, it's an amazing activity to do with friends! " imageURL={"/../../images/climbing.png"}/>
-        <HobbieCard title="Hiking" description="Hiking is a great way to see amazing views of the world." imageURL={"/../../images/hiking.jpg"}/>
+        <HobbieCard title="Climbing" description="Over the past few years i've gotten into bouldering and top rope climbing, it's an amazing activity to do with friends! " imageURL={"/images/climbing.png"}/>
+        <HobbieCard title="Hiking" description="Hiking is a great way to see amazing views of the world." imageURL={"/images/hiking.jpg"}/>
         <HobbieCard title="Cooking" description="although it's not the healthiest, I like to create cool dishes sometimes." imageURL={"/../../images/goodMeal.jpg"}/>
         <HobbieCard title="Hockey" description="Being Canadian, Hockey is my go to sport. Go Canes!" imageURL={"/../../images/.jpg"}/>
         <HobbieCard title="Video Games" description="On Discord you can catch me playing some of my favourite games including OverWatch, League, DBD, Terraria and Minecraft." imageURL={"/../../images/.jpg"}/>
