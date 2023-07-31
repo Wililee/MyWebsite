@@ -1,8 +1,5 @@
-import styles from '../../../styles/Home.module.css';
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link'
-import 'tailwindcss/tailwind.css';
-
 
 export const LabeledCard = ({link, title, description, imageURL, styles}) => {
 
@@ -17,7 +14,7 @@ export const LabeledCard = ({link, title, description, imageURL, styles}) => {
           margin:'auto',
           borderWidth:5,
         }}>
-          <Card.Img variant="top" src={imageURL} style={{height:'100%', width:'100%'}}/>
+          <Card.Img variant="top" src={imageURL} className='h-max w-max'/>
           <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
